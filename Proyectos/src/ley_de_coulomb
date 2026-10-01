@@ -1,0 +1,10 @@
+print("Escriba los datos para sacar la fuerza de atraccion entre dos cargas electricas")
+print("Ingrese el valor de la carga 1 (en Coulombs): ")
+carga_uno = float(input())
+print("Ingrese el valor de la carga 2 (en Coulombs): ")
+carga_dos = float(input())
+print("Ingrese la distancia entre las cargas (en metros): ")
+distancia = float(input())
+k = 9e9  # Constante de Coulomb en N·m²/C²
+fuerzaElecrica = k * (carga_uno * carga_dos) / (distancia ** 2)
+print("La fuerza eléctrica es:", fuerzaElecrica, "N")
